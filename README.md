@@ -10,7 +10,6 @@
 - Navbar động, chuyển trang mượt mà
 - Card login/register/forgot password với animation
 - Background gradient đẹp với hiệu ứng chuyển màu
-- Footer đơn giản, hiển thị thông tin tác giả
 - Responsive, tối ưu cho desktop
 
 ---
