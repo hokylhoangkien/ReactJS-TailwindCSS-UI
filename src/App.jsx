@@ -13,12 +13,11 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-white font-sans flex flex-col">
-      {/* 🌅 Background */}
+      {/* Background */}
       <Background />
 
-      {/* 🌙 NAVBAR */}
-      <nav className="absolute top-0 left-0 right-0 flex items-center justify-between px-12 py-3 bg-black/15 backdrop-blur-md border-b border-white/10 z-30">
-        {/* Logo */}
+      {/* Navbar */}
+      <nav className="absolute top-0 left-0 right-0 flex flex-wrap items-center justify-between px-4 md:px-12 py-3 bg-black/15 backdrop-blur-md border-b border-white/10 z-30">
         <div className="flex items-center gap-2">
           <img
             src={logo}
@@ -27,9 +26,7 @@ export default function App() {
           />
           <h1 className="text-lg font-semibold tracking-wide">HoKyL</h1>
         </div>
-
-        {/* Menu */}
-        <div className="flex items-center gap-8 text-sm font-medium">
+        <div className="flex gap-4 md:gap-8 text-sm font-medium mt-2 md:mt-0">
           <button
             onClick={() => setPage("login")}
             className={`transition-colors hover:text-sky-300 ${
@@ -57,91 +54,87 @@ export default function App() {
         </div>
       </nav>
 
-      {/* 🌟 MAIN CONTENT */}
-      <div className="flex flex-1 items-center justify-between px-24 z-10">
-        {/* ✨ LEFT TEXT AREA (Animated by page) */}
+      {/* Main content */}
+      <div className="flex flex-col-reverse md:flex-row flex-1 items-center justify-between px-6 md:px-24 z-10 mt-24 md:mt-0 gap-8 md:gap-0">
+        {/* Left text */}
         <AnimatePresence mode="wait">
           <motion.div
             key={page}
-            initial={{ opacity: 0, x: -60 }}
+            initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 60 }}
+            exit={{ opacity: 0, x: 40 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="max-w-xl select-none"
+            className="max-w-full md:max-w-xl select-none text-center md:text-left"
           >
             {page === "login" && (
               <>
                 <p className="tracking-[0.3em] text-xs text-white/80 mb-3 uppercase">
                   Welcome Back
                 </p>
-                <h1 className="text-6xl font-extrabold leading-tight mb-3">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-3">
                   <span className="block">Creative</span>
                   <span className="block text-white/90">Simplicity</span>
                 </h1>
-                <p className="text-white/70 text-sm max-w-md">
+                <p className="text-white/70 text-sm md:text-base max-w-md mx-auto md:mx-0">
                   Tinh giản, hiệu quả và sáng tạo — hãy đăng nhập để tiếp tục
                   hành trình của bạn.
                 </p>
               </>
             )}
-
             {page === "register" && (
               <>
                 <p className="tracking-[0.3em] text-xs text-white/80 mb-3 uppercase">
                   Join the Team
                 </p>
-                <h1 className="text-6xl font-extrabold leading-tight mb-3">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-3">
                   <span className="block">Shape</span>
                   <span className="block text-white/90">The Future</span>
                 </h1>
-                <p className="text-white/70 text-sm max-w-md">
+                <p className="text-white/70 text-sm md:text-base max-w-md mx-auto md:mx-0">
                   Đăng ký ngay để cùng chúng tôi tạo nên điều khác biệt.
                 </p>
               </>
             )}
-
             {page === "forgot" && (
               <>
                 <p className="tracking-[0.3em] text-xs text-white/80 mb-3 uppercase">
                   Forgot Password
                 </p>
-                <h1 className="text-6xl font-extrabold leading-tight mb-3">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-3">
                   <span className="block">Reset</span>
                   <span className="block text-white/90">Your Access</span>
                 </h1>
-                <p className="text-white/70 text-sm max-w-md">
+                <p className="text-white/70 text-sm md:text-base max-w-md mx-auto md:mx-0">
                   Đừng lo! Hãy nhập email của bạn và lấy lại quyền truy cập dễ
                   dàng.
                 </p>
               </>
             )}
-
             {page === "contact" && (
               <>
                 <p className="tracking-[0.3em] text-xs text-white/80 mb-3 uppercase">
                   Get in Touch
                 </p>
-                <h1 className="text-6xl font-extrabold leading-tight mb-3">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-3">
                   <span className="block">Let's</span>
                   <span className="block text-white/90">Connect</span>
                 </h1>
-                <p className="text-white/70 text-sm max-w-md">
+                <p className="text-white/70 text-sm md:text-base max-w-md mx-auto md:mx-0">
                   Bạn có ý tưởng? Liên hệ với chúng tôi để cùng biến nó thành
                   hiện thực.
                 </p>
               </>
             )}
-
             {page === "about" && (
               <>
                 <p className="tracking-[0.3em] text-xs text-white/80 mb-3 uppercase">
                   Who We Are
                 </p>
-                <h1 className="text-6xl font-extrabold leading-tight mb-3">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-3">
                   <span className="block">Beyond</span>
                   <span className="block text-white/90">Imagination</span>
                 </h1>
-                <p className="text-white/70 text-sm max-w-md">
+                <p className="text-white/70 text-sm md:text-base max-w-md mx-auto md:mx-0">
                   Chúng tôi là đội ngũ trẻ đầy nhiệt huyết, hướng đến sự sáng
                   tạo và khác biệt.
                 </p>
@@ -150,15 +143,15 @@ export default function App() {
           </motion.div>
         </AnimatePresence>
 
-        {/* 💫 RIGHT CARD AREA */}
+        {/* Right card */}
         <AnimatePresence mode="wait">
           <motion.div
             key={page}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -40 }}
+            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="bg-white/10 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 p-10 w-[400px]"
+            className="bg-white/10 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 p-6 sm:p-10 w-full sm:w-[400px]"
           >
             {page === "login" && (
               <Login
@@ -182,7 +175,7 @@ export default function App() {
         </AnimatePresence>
       </div>
 
-      {/* 🌸 FOOTER */}
+      {/* Footer */}
       <footer className="absolute bottom-4 left-0 right-0 text-center text-white/60 text-sm">
         Made with <span className="text-pink-400">❤️</span> by{" "}
         <span className="font-medium">Hoàng Kiên</span>
