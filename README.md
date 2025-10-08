@@ -1,16 +1,37 @@
-# React + Vite
+# HoKyL ReactJS TailwindCSS UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎨 **HoKyL ReactJS TailwindCSS UI** là một ứng dụng mẫu giao diện đẹp bằng **ReactJS** và **TailwindCSS**, kết hợp với **Framer Motion** để tạo hiệu ứng animation mượt mà.  
+Ứng dụng bao gồm các trang: **Login, Register, Forgot Password, About, Contact** với thiết kế hiện đại và responsive.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tính năng nổi bật
 
-## React Compiler
+- Navbar động, chuyển trang mượt mà
+- Card login/register/forgot password với animation
+- Background gradient đẹp với hiệu ứng chuyển màu
+- Footer đơn giản, hiển thị thông tin tác giả
+- Responsive, tối ưu cho desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Xem trực tiếp tại: [Demo HoKyL UI](https://hokylhoangkien.github.io/ReactJS-TailwindCSS-UI/)
+
+---
+
+## Công nghệ sử dụng
+
+- **ReactJS** – xây dựng UI
+- **TailwindCSS** – thiết kế responsive và hiện đại
+- **Framer Motion** – animation mượt mà cho các component
+
+---
+
+## Tác giả
+
+**Hoàng Kiên**  
+GitHub: [hokylhoangkien](https://github.com/hokylhoangkien)
+
+---
