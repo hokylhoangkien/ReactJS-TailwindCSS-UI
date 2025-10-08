@@ -174,12 +174,6 @@ export default function App() {
           </motion.div>
         </AnimatePresence>
       </div>
-
-      {/* Footer */}
-      <footer className="absolute bottom-4 left-0 right-0 text-center text-white/60 text-sm">
-        Made with <span className="text-pink-400">❤️</span> by{" "}
-        <span className="font-medium">Hoàng Kiên</span>
-      </footer>
     </div>
   );
 }
